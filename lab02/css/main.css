@@ -132,6 +132,52 @@ a {
   box-shadow: 0 0 10px #1f1f3d inset;
 }
 
+/* Tab container */
+.tab {
+  overflow: hidden;
+  background-color: #0b0f2b;
+  border-bottom: 2px solid #2e3a87;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Tab buttons */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 20px;
+  transition: 0.3s;
+  font-size: 18px;
+  color: #d0d6f9;
+}
+
+.tab button:hover {
+  background-color: #1a1f4c;
+  color: #ffffff;
+  text-shadow: 0 0 6px #00ffff;
+}
+
+.tab button.active {
+  background-color: #2e3a87;
+  color: #ffffff;
+  text-shadow: 0 0 6px #ffd700;
+}
+
+/* Tab content */
+.tabcontent {
+  display: none;
+  padding: 20px;
+  border: 2px solid #2e3a87;
+  border-top: none;
+  background-color: rgba(11, 15, 43, 0.9);
+  color: white;
+  font-size: 18px;
+  font-family: 'Orbitron', sans-serif;
+  box-shadow: 0 0 10px #1f1f3d inset;
+}
+
 /* When the screen is less than 800 pixels wide */
 @media screen and (max-width: 800px) {
   /* Hide all links, except for the selected tab */
