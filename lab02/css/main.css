@@ -179,7 +179,7 @@ a {
 }
 
 /* When the screen is less than 800 pixels wide */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   /* Hide all links, except for the selected tab */
   .topnav a:not(.active) {
     display: none;
@@ -211,5 +211,10 @@ a {
     float: none;
     display: block;
     text-align: left;
+  }
+
+  iframe {
+    width: auto;
+    height: auto;
   }
 }
